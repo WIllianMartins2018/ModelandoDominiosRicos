@@ -13,6 +13,8 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;
             _subscriptions = new List<Subscription>();
+
+            AddNotifications(fullName, document, email);
         }
 
         public FullName FullName { get; private set; }
