@@ -13,8 +13,6 @@ namespace PaymentContext.Domain.ValueObjects
 
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsNullOrEmpty(FirstName, "FullName.FirsName", "Nome Inválido")
-                .IsNullOrEmpty(LastName, "FullName.LastName", "Sobrenome Inválido")
             );        
         }
 

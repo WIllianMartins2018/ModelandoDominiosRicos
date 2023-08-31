@@ -26,7 +26,7 @@ namespace PaymentContext.Domain.ValueObjects
             if (Type == EDocumentType.CNPJ && Number.Length == 14)
                 return true;
 
-            if (Type == EDocumentType.CPF && Number.Length == 12)
+            if (Type == EDocumentType.CPF && Number.Length == 11)
                 return true;
 
             return false;
